@@ -1,0 +1,112 @@
+{
+  "common": {
+    "addToCart": "Add to Cart",
+    "viewDetails": "View Details",
+    "loading": "Loading…",
+    "noResults": "No results found",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit"
+  },
+  "header": {
+    "searchPlaceholder": "Search by title, author, ISBN…",
+    "cartAriaLabel": "Shopping cart",
+    "myAccount": "My Account",
+    "logout": "Sign Out",
+    "signIn": "Sign In",
+    "register": "Register"
+  },
+  "nav": {
+    "home": "Home",
+    "catalog": "Browse Books",
+    "cart": "Cart",
+    "account": "My Account",
+    "admin": "Admin"
+  },
+  "home": {
+    "heroHeading": "Discover Your Next Great Read",
+    "heroSubheading": "Thousands of books across every genre, delivered to your door.",
+    "shopNow": "Shop Now",
+    "featuredCategories": "Browse by Category",
+    "featuredBooks": "Staff Picks",
+    "newArrivals": "New Arrivals"
+  },
+  "catalog": {
+    "heading": "All Books",
+    "filters": "Filters",
+    "sortBy": "Sort by",
+    "resultsCount": "books found",
+    "noBooks": "No books match your filters.",
+    "clearFilters": "Clear Filters"
+  },
+  "bookDetail": {
+    "addToCart": "Add to Cart",
+    "addToWishlist": "Add to Wishlist",
+    "outOfStock": "Out of Stock",
+    "reviews": "Customer Reviews",
+    "writeReview": "Write a Review",
+    "relatedBooks": "You May Also Like"
+  },
+  "cart": {
+    "heading": "Your Cart",
+    "empty": "Your cart is empty",
+    "startShopping": "Start Shopping",
+    "orderSummary": "Order Summary",
+    "subtotal": "Subtotal",
+    "discount": "Discount",
+    "tax": "Tax",
+    "total": "Total",
+    "promoCode": "Promo Code",
+    "applyPromo": "Apply",
+    "proceedToCheckout": "Proceed to Checkout"
+  },
+  "checkout": {
+    "steps": {
+      "address": "Shipping Address",
+      "shipping": "Shipping Method",
+      "payment": "Payment",
+      "confirmation": "Order Confirmed"
+    },
+    "placeOrder": "Place Order",
+    "orderConfirmed": "Order Confirmed!",
+    "confirmationMessage": "Your order has been placed."
+  },
+  "auth": {
+    "login": "Sign In",
+    "register": "Create Account",
+    "forgotPassword": "Forgot Password?",
+    "resetPassword": "Reset Password",
+    "emailLabel": "Email Address",
+    "passwordLabel": "Password",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?"
+  },
+  "account": {
+    "profile": "Profile",
+    "orders": "Order History",
+    "wishlist": "Wishlist",
+    "addresses": "Saved Addresses",
+    "changePassword": "Change Password"
+  },
+  "admin": {
+    "dashboard": "Admin Dashboard",
+    "books": "Manage Books",
+    "categories": "Manage Categories",
+    "orders": "Manage Orders",
+    "inventory": "Inventory"
+  },
+  "footer": {
+    "tagline": "Your favourite books, delivered fast.",
+    "copyright": "© 2026 BookStore. All rights reserved.",
+    "newsletterHeading": "Stay in the loop",
+    "newsletterPlaceholder": "Enter your email",
+    "newsletterCta": "Subscribe",
+    "companyHeading": "Company",
+    "helpHeading": "Help",
+    "categoriesHeading": "Categories",
+    "socialHeading": "Follow Us"
+  }
+}
