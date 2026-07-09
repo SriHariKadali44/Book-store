@@ -5,7 +5,7 @@ import {
   signal,
 } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Router, RouterLink } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { AuthService } from '../../../../shared/auth/auth.service';
 import { ToastService } from '../../../../core/services/toast.service';
 
@@ -26,7 +26,7 @@ import { ToastService } from '../../../../core/services/toast.service';
         <div class="bg-surface-card rounded-3 shadow-sm p-4">
           <!-- Demo credentials hint -->
           <div class="alert alert-light border small py-2 mb-3">
-            <strong>Demo:</strong> shopper@bookstore.com / admin@bookstore.com — password: <code>password123</code>
+            <strong>Demo:</strong> alice@example.com / admin@bookstore.com — password: <code>password123</code>
           </div>
 
           @if (serverError()) {
@@ -76,6 +76,7 @@ export class LoginComponent {
   private readonly fb           = inject(FormBuilder);
   private readonly authService  = inject(AuthService);
   private readonly router       = inject(Router);
+  private readonly route        = inject(ActivatedRoute);
   private readonly toastService = inject(ToastService);
 
   readonly loading     = signal(false);
@@ -98,7 +99,8 @@ export class LoginComponent {
       next: (user) => {
         this.loading.set(false);
         this.toastService.show(`Welcome back, ${user.firstName}!`, 'success');
-        this.router.navigate(['/']);
+        const returnUrl = this.route.snapshot.queryParamMap.get('returnUrl') ?? '/';
+        this.router.navigateByUrl(returnUrl);
       },
       error: (err) => {
         this.loading.set(false);

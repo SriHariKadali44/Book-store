@@ -25,7 +25,7 @@ import { ContentService } from '../../core/services/content.service';
           type="search"
           class="form-control border-end-0"
           [formControl]="queryControl"
-          [placeholder]="content.get('header').searchPlaceholder"
+          [placeholder]="content.getKey('header', 'searchPlaceholder') || 'Search books…'"
           aria-label="Search books"
           style="border-radius:20px 0 0 20px;background:var(--surface-muted)"
           (keydown.enter)="onSubmit($event)"
